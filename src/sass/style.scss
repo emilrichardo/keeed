@@ -1,39 +1,66 @@
 $theme-colors: (
     "primary": #FF765A,
-    "dark": #2C2E34
+    "dark": #2C2D32,
+    "white": #fff,
 );
 
 $font-family-sans-serif:  'Roboto', sans-serif;
 
 
-$input-border-radius:  100px;
-$input-border-radius-lg: 100px;
-$input-border-radius-sm:  100px;
+
+
+
+$input-border-radius:  30px;
+$input-border-radius-lg: 30px;
+$input-border-radius-sm:  30px;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:          100px;
-$btn-border-radius-lg:        100px;
-$btn-border-radius-sm:         100px;
-
 
 $input-font-size-lg:  16px;
 $input-padding-x-lg: 25px;
 $input-padding-y-lg: 15px;
 
+$btn-border-radius:          100px;
+$btn-border-radius-lg:        100px;
+$btn-border-radius-sm:         100px;
+
+$btn-padding-y-lg:           15px;
+$btn-padding-x-lg:            50px;
+
+$btn-font-size-lg:           28px;
 
 
 
+$body-bg:                  #2C2D32;
+$body-color:                #fff;
 
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1340px
+) !default;
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+
+
+
 body {
-   padding-top: 45px;
+   padding-top: 145px;   
+   overflow-x: hidden;
+   background: url('../../img/bg-left.svg')  left 20vh no-repeat, url('../../img/bg-right.svg') right 35vh no-repeat;
+   background-attachment: fixed;
+   background-size: 15vw ,15vw;
+   
    
 }
 
+.btn-primary{
+    color:$white
+}
 
 
 .navbar {    
@@ -44,6 +71,9 @@ body {
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 1px;
+        @media (max-width:768px){
+            margin: 32px auto;
+        }
     }
 }
 
@@ -113,6 +143,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', end
     position: relative;
 }
 
+
+
+.icon-menu{
+    width: 12vw;
+}
 //*login/*
 
 section.login{
@@ -138,4 +173,79 @@ section.login{
 .icon-arrow{
     max-width: 15px;
     margin-left: 20px;
+}
+
+
+/*page home*/
+
+.section-block{
+    padding: 15vh 0;
+}
+
+.features-list{
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            font-size: clamp(18px, 1.6vw, 54px) ;
+            display: block;           
+            margin: 5vh auto;
+            color: rgba($white, .6);
+
+            & + li{
+                &:before{
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    margin: 15px auto;
+                    margin-bottom: 45px;                    
+                    max-width: 200px;
+                        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c2e34+0,ff765a+26,ff765a+49,ff765a+71,2c2e34+100 */
+                    background: #2c2e34; /* Old browsers */
+                    background: -moz-linear-gradient(left,  #2c2e34 0%, #ff765a 26%, #ff765a 49%, #ff765a 71%, #2c2e34 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  #2c2e34 0%,#ff765a 26%,#ff765a 49%,#ff765a 71%,#2c2e34 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  #2c2e34 0%,#ff765a 26%,#ff765a 49%,#ff765a 71%,#2c2e34 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', endColorstr='#2c2e34',GradientType=1 ); /* IE6-9 */
+
+                }
+            }
+        }
+    }
+}
+
+.step-header{
+    ul{
+        margin: 0;
+        padding: 62px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media (min-width:768px){
+            flex-direction: row;
+        }
+        li{
+            display: inline-block;
+            font-size: 18px;
+            position: relative;
+            margin: 5px 0;
+            @media (min-width:768px){
+                & + li{
+                    &:before{
+                        content: "";
+                        height: 180px;
+                        display: block;
+                        width: 55px;
+                        background: url('../img/vertical-separator.jpg');
+                        position: absolute;
+                        left: -60px;
+                        top: -70px;
+                        z-index: -1;
+                    }
+                }
+            }
+            
+           
+        }
+    }
 }
