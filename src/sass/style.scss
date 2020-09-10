@@ -1,0 +1,141 @@
+$theme-colors: (
+    "primary": #FF765A,
+    "dark": #2C2E34
+);
+
+$font-family-sans-serif:  'Roboto', sans-serif;
+
+
+$input-border-radius:  100px;
+$input-border-radius-lg: 100px;
+$input-border-radius-sm:  100px;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:          100px;
+$btn-border-radius-lg:        100px;
+$btn-border-radius-sm:         100px;
+
+
+$input-font-size-lg:  16px;
+$input-padding-x-lg: 25px;
+$input-padding-y-lg: 15px;
+
+
+
+
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+   padding-top: 45px;
+   
+}
+
+
+
+.navbar {    
+    text-transform: uppercase;
+    
+    .nav-item{
+        margin: 0 10px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+.navbar-brand{
+    img{
+        width:  clamp(50px, 180px, 25vw); 
+    }
+}
+
+.line-gradient{
+    height: 2px;
+    margin: 0 15%;
+    width: 70%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.bg-gradient {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c2e34+0,ff765a+26,ff765a+49,ff765a+71,2c2e34+100 */
+background: #2c2e34; /* Old browsers */
+background: -moz-linear-gradient(left,  #2c2e34 0%, #ff765a 26%, #ff765a 49%, #ff765a 71%, #2c2e34 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2c2e34 0%,#ff765a 26%,#ff765a 49%,#ff765a 71%,#2c2e34 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2c2e34 0%,#ff765a 26%,#ff765a 49%,#ff765a 71%,#2c2e34 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', endColorstr='#2c2e34',GradientType=1 ); /* IE6-9 */
+
+}
+
+@media (min-width:768px){
+    .main{
+        margin-top: 150px;
+    }
+}/**/
+
+.img-chart{
+    margin-right: -85px;
+}
+
+.counter{
+    position: relative;
+    text-align: center;
+}
+.bullet-points{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 0;
+}
+
+@media (max-width:768px){
+    .counter{
+        text-align: left;
+        
+        .h1{
+            font-size: 24px;
+        }
+    }
+    .bullet-points{
+        transform: rotate(-90deg);
+        top: 45%;
+        left: -50%;
+    }
+
+} /**/
+
+
+.col-line{
+    position: relative;
+}
+
+//*login/*
+
+section.login{
+    margin-top: 150px;
+}
+
+@media (min-width:768px){
+    .login {
+        margin-top: 200px!important;
+    }
+}/**/
+
+
+.iso{
+    max-width: 50px;
+}
+
+.form-login{
+    max-width: 300px;
+    margin:0 auto;
+}
+
+.icon-arrow{
+    max-width: 15px;
+    margin-left: 20px;
+}
