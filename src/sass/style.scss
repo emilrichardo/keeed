@@ -1,14 +1,15 @@
+$dark:#2C2D32;
+$white: #fff;
+$secondary: #6f9be8;
+
 $theme-colors: (
     "primary": #FF765A,
-    "dark": #2C2D32,
-    "white": #fff,
+    "dark": $dark,
+    "white": $white,
+    "secondary": $secondary,
 );
 
 $font-family-sans-serif:  'Roboto', sans-serif;
-
-
-
-
 
 $input-border-radius:  30px;
 $input-border-radius-lg: 30px;
@@ -19,20 +20,15 @@ $input-border-radius-sm:  30px;
 $input-font-size-lg:  16px;
 $input-padding-x-lg: 25px;
 $input-padding-y-lg: 15px;
-
 $btn-border-radius:          100px;
 $btn-border-radius-lg:        100px;
 $btn-border-radius-sm:         100px;
-
 $btn-padding-y-lg:           15px;
 $btn-padding-x-lg:            50px;
-
 $btn-font-size-lg:           28px;
 
-
-
-$body-bg:                  #2C2D32;
-$body-color:                #fff;
+$body-bg:                  $dark;
+$body-color:                $white;
 
 
 $container-max-widths: (
@@ -42,9 +38,33 @@ $container-max-widths: (
   xl: 1340px
 ) !default;
 
+/**cards*/
+$card-border-radius:                25px;
+$card-color:                        $white;
+$card-bg:                           darken($dark,1.5%);
+$card-spacer-y:                     1.75rem !default;
+$card-spacer-x:                     2.25rem !default;
+
+
+//tables
+
+$table-dark-bg:               darken($dark,1.2%);
+$table-dark-accent-bg:        rgba($white, .05) !default;
+
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     lighten($dark,1.2%);
+$table-cell-padding:          1.1rem ;
+
+
+//list groups
+$list-group-color:                  $white;
+$list-group-bg:                     darken($dark,.2%);
+$list-group-border-color:           lighten($dark, 5%);
+$list-group-border-width:           1px;
+$list-group-border-radius:         0;
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
 
 
 
