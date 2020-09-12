@@ -28,7 +28,7 @@
                         <ul class="navbar-nav ml-auto mr-md-2">
                             <li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Feature</a>
+                            <li class="nav-item"> <a class="nav-link" href="#features">Features</a>
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="#">Security</a>
                             </li>
@@ -36,9 +36,9 @@
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="#">Cryptocurrency</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Team</a>
+                            <li class="nav-item"> <a class="nav-link" href="#team">Team</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Contact</a>
+                            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav flex-column ml-5 mt-2 mt-md-0">
@@ -79,7 +79,7 @@
             </div>
             <img class="wow bounceInUp" src="./img/lock.jpg" alt="">
         </section>
-        <section class="process section-block ">
+        <section class="process section-block " id="features">
             <div class="container">
                 <div class="row justify-content-around align-items-center">
                     <div class="col-5 col-md-12 order-md-2">
@@ -139,7 +139,7 @@
                 <img src="./img/feature-6.jpg" alt="">
             </div>
         </section>
-        <section class="team section-block">
+        <section class="team section-block" id="team">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12 col-md-4 mb-5 px-3">
@@ -242,7 +242,7 @@
 
                 <Strong class="text-center">Hugo Ortiz</Strong> <br>
 
-                <i>Technology  Consultant</i> 
+                <i>VP of Sales South America</i> 
 
               </h5>
                                 </div>
@@ -281,7 +281,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact section-block text-center">
+        <section class="contact section-block text-center" id="contact">
             <img style="max-width: 120px;" class="mb-5 wow bounceIn  " src="./img/iso.svg"
             alt="">
              <h4 class="h3 mb-3">Contact</h4>
@@ -318,6 +318,12 @@
             </div>
         </footer>
         <script src="js/all.js"></script>
+        <script>
+            $(".navbar-nav li a").click(function() {   
+                  $(".navbar-collapse").toggleClass("show");
+                 
+                });
+        </script>
         <!-- <script src="js/wow.min.js"></script> -->
         <!-- <script>
 

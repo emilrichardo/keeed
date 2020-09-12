@@ -28,7 +28,7 @@
                         <ul class="navbar-nav ml-auto mr-md-2">
                             <li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Feature</a>
+                            <li class="nav-item"> <a class="nav-link" href="#features">Features</a>
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="#">Security</a>
                             </li>
@@ -36,9 +36,9 @@
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="#">Cryptocurrency</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Team</a>
+                            <li class="nav-item"> <a class="nav-link" href="#team">Team</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Contact</a>
+                            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav flex-column ml-5 mt-2 mt-md-0">
@@ -85,6 +85,12 @@
             </div>
         </section>
         <script src="js/all.js"></script>
+        <script>
+            $(".navbar-nav li a").click(function() {   
+                  $(".navbar-collapse").toggleClass("show");
+                 
+                });
+        </script>
         <!-- <script src="js/wow.min.js"></script> -->
         <!-- <script>
 
