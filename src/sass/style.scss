@@ -114,7 +114,10 @@ body {
 }
 }
 
-
+button:focus{
+    outline: 0;
+    outline: 0px auto transparent;  
+}
 .navbar {    
     text-transform: uppercase;
     
