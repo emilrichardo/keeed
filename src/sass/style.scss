@@ -9,6 +9,8 @@ $theme-colors: (
     "secondary": $secondary,
 );
 
+
+
 $font-family-sans-serif:  'Roboto', sans-serif;
 
 $input-border-radius:  30px;
@@ -16,13 +18,15 @@ $input-border-radius-lg: 30px;
 $input-border-radius-sm:  30px;
 
 // Allows for customizing button radius independently from global border radius
-
+$btn-padding-y:           15px;
+$btn-padding-x:            50px;
 $input-font-size-lg:  16px;
 $input-padding-x-lg: 25px;
 $input-padding-y-lg: 15px;
 $btn-border-radius:          100px;
 $btn-border-radius-lg:        100px;
 $btn-border-radius-sm:         100px;
+
 $btn-padding-y-lg:           15px;
 $btn-padding-x-lg:            50px;
 $btn-font-size-lg:           28px;
@@ -82,6 +86,12 @@ body {
 
 .btn-primary{
     color:$white
+}
+
+@media (min-width:768px){
+.btn{
+    min-width: 200px;
+}
 }
 
 
@@ -268,6 +278,40 @@ section.login{
             }
             
            
+        }
+    }
+}
+
+
+
+//wallets ui
+@media (max-width:768px){
+    .phone{
+        margin-top: -500px;
+        right: -200px;
+        position: absolute;
+    }
+    .footer-wallet{
+        position: relative;
+    }
+}
+
+.footer-wallet {
+    background-color: darken($dark ,5%);
+    color: rgba($white, .3);
+    a{
+        color: rgba($white, .4);
+        display: inline-block;
+        margin: 0 8px;
+    }
+}
+
+//register page
+.register{
+    @media (max-width:768px){
+        
+        .card{
+            background: transparent;
         }
     }
 }
