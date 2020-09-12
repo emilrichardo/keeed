@@ -62,25 +62,44 @@ $table-cell-padding:          1.1rem ;
 
 //list groups
 $list-group-color:                  $white;
-$list-group-bg:                     darken($dark,.2%);
+$list-group-bg:                     transparent;
 $list-group-border-color:           lighten($dark, 5%);
 $list-group-border-width:           1px;
 $list-group-border-radius:         0;
+$list-group-hover-bg:               lighten($dark, 3%);
+$list-group-action-hover-color:     $white;
+$list-group-item-padding-y:         1rem ;
+$list-group-item-padding-x:         1.25rem !default;
+$list-group-active-bg:           lighten($dark, 4%);
+
+
+
+
+//modal
+$modal-content-bg:                  $dark;
+$modal-content-border-color:        lighten($dark,1.2%);
+$modal-header-border-color:         lighten($dark,1.2%);
+$modal-footer-border-color:        lighten($dark,2.2%);
+
+
+$close-color:                       $white;
+$close-text-shadow:                 0 1px 0 $dark !default;
+
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
+html,body{
+    height: 100%;
+}
 
 body {
    padding-top: 145px;   
-   overflow-x: hidden;
-   
+   overflow-x: hidden;   
    background: url('../img/bg-left.svg')  left 20vh no-repeat, url('../img/bg-right.svg') right 35vh no-repeat;
    background-attachment: fixed;
    background-size: 15vw ,15vw;
-   background-color: $dark;
-   
+   background-color: $dark;   
    
 }
 
