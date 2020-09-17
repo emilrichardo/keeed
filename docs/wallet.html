@@ -17,13 +17,34 @@
     </head>
     
     <body>
+        <nav class="app-nav d-block d-md-none">
+            <ul class="nav  nav-fill h3">
+                <li class="nav-item  active"> <a class="nav-link " href="#"><i class='bx bx-chat'></i></a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i class='bx bx-user' ></i></a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i class='bx bx-cog' ></i></a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="#"><i class='bx bx-wallet' ></i></a>
+                </li>
+            </ul>
+        </nav>
         <section class="wallet-hero  h-100" style="margin-top: -125px;">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-12 col col-md-6 text-center text-md-left">
                         <img style="width: 90px" src="./img/iso.svg" alt="">
-                         <h1 class="display-4 font-weight-bold text-primary mt-5">EEE Wallet</h1>
-                         <h4>Enabling freedom of thought and expression through a secure platform for modern discourse.</h4> <a href="#" class="btn btn-primary btn-lg mt-4">Start</a>
+                         <h1 class="display-4 font-weight-bold text-primary mt-5">KEEED Wallet</h1>
+                         <h4>Enabling freedom of thought and expression through a secure platform for modern discourse.</h4>
+                        <div class="form-authenticate mt-4 py-5 ">
+                            <form>
+                                <div class="form-group d-md-flex align-items-center">
+                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email address">
+                                    <button type="submit" class="btn btn-primary ml-md-4 mt-2 btn-block col-md-3">Authenticate</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="d-none d-md-block col-12 col col-md-6 order-md-2 text-center">
                         <img src="./img/phone.png" alt="">
@@ -47,30 +68,19 @@
                  
                 });
         </script>
-        <!-- <script src="js/wow.min.js"></script> -->
-        <!-- <script>
-
-wow = new WOW(
-
-    {
-
-    boxClass:     'wow',      // default
-
-    animateClass: 'animated', // default
-
-    offset:       10,          // default
-
-    mobile:       false,       // default
-
-    live:         true        // default
-
-}
-
-)
-
-wow.init();
-
-</script> -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+                {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       10,          // default
+                mobile:       false,       // default
+                live:         true        // default
+            }
+            )
+            wow.init();
+        </script>
     </body>
 
 </html>

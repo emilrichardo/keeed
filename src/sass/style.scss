@@ -308,6 +308,27 @@ section.login{
 
 
 //wallets ui
+
+.app-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100vw; 
+    left: 0; 
+    right: 0;  
+    background-color: lighten($dark ,3%);
+    z-index: 10000;
+    padding: 14px;
+    li:not(.active){
+        a{
+            color: rgba($white, .3);
+        }       
+
+    }
+       
+}
+
+
+
 @media (max-width:768px){
     .phone{
         margin-top: -500px;
