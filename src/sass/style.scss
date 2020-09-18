@@ -1,6 +1,7 @@
 $dark:#2C2D32;
 $white: #fff;
-$secondary: #6f9be8;
+$secondary: #45484d;
+$dark-blue:#222530;
 
 $theme-colors: (
     "primary": #FF765A,
@@ -18,7 +19,7 @@ $input-border-radius-lg: 30px;
 $input-border-radius-sm:  30px;
 
 // Allows for customizing button radius independently from global border radius
-$btn-padding-y:           16px;
+$btn-padding-y:           15px;
 $btn-padding-x:            50px;
 $input-font-size-lg:  16px;
 $input-padding-x-lg: 25px;
@@ -95,12 +96,15 @@ html,body{
 }
 
 body {
-   padding-top: 145px;   
+   
    overflow-x: hidden;   
    background: url('../img/bg-left.svg')  left 20vh no-repeat, url('../img/bg-right.svg') right 35vh no-repeat;
    background-attachment: fixed;
    background-size: 15vw ,15vw;
    background-color: $dark;   
+   @media (max-width:768px){
+       font-size: 12px;
+   }
    
 }
 
@@ -311,8 +315,13 @@ section.login{
 //wallets ui
 
 .wallet-pages{
+    
     @media (max-width:768px){
-        padding-bottom: 85px;
+        
+    }
+
+    .display-4 {
+        
     }
 }
 
@@ -336,6 +345,18 @@ section.login{
 
 
 
+.wallet-hero{
+    padding-top: 12vh;
+    @media (max-width:768px){
+        .display-4{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+    }
+}
+
 @media (max-width:768px){
     .phone{
         margin-top: -500px;
@@ -343,8 +364,8 @@ section.login{
         position: absolute;
     }
     .footer-wallet{
-        position: relative;
-        bottom: 85px;
+       
+        margin-bottom: 75px;
     }
 }
 
@@ -356,7 +377,19 @@ section.login{
         display: inline-block;
         margin: 0 8px;
     }
+    @media (min-width:768px){
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }
+
+
+.wallet-header{
+    background-color: darken($dark,5%);
+}
+
 
 //register page
 .register{
