@@ -22,12 +22,12 @@ $input-border-radius-sm:  30px;
 
 
 $input-btn-padding-y: 1rem;
-$input-btn-padding-x: 1rem;
-$input-btn-padding-y-lg: 1.2rem;
-$input-btn-padding-x-lg: 1.2rem;
+$input-btn-padding-x: 2rem;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2.2rem;
 
 $input-btn-font-size: 1rem;
-$input-btn-font-size-sm: 1.5rem;
+$input-btn-font-size-sm: 1.8rem;
 
 
 
@@ -218,7 +218,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', end
 //*login/*
 
 section.login{
-    margin-top: 150px;
+    margin-top: 15vh;
 }
 
 @media (min-width:768px){
@@ -326,12 +326,12 @@ section.login{
 .wallet-pages{
     
     @media (max-width:768px){
-        
+        .display-4 {
+            font-size: 2rem;
+        }
     }
 
-    .display-4 {
-        
-    }
+    
 }
 
 .app-nav{
