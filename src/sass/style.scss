@@ -1,4 +1,4 @@
-$dark:#2C2D32;
+$dark:#292e38;
 $white: #fff;
 $secondary: #45484d;
 $dark-blue:#222530;
@@ -19,18 +19,25 @@ $input-border-radius-lg: 30px;
 $input-border-radius-sm:  30px;
 
 // Allows for customizing button radius independently from global border radius
-$btn-padding-y:           15px;
-$btn-padding-x:            50px;
-$input-font-size-lg:  16px;
-$input-padding-x-lg: 25px;
-$input-padding-y-lg: 15px;
+
+
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y-lg: 1.2rem;
+$input-btn-padding-x-lg: 1.2rem;
+
+$input-btn-font-size: 1rem;
+$input-btn-font-size-sm: 1.5rem;
+
+
+
+
+
 $btn-border-radius:          100px;
 $btn-border-radius-lg:        100px;
 $btn-border-radius-sm:         100px;
 
-$btn-padding-y-lg:           15px;
-$btn-padding-x-lg:            50px;
-$btn-font-size-lg:           28px;
+
 
 $body-bg:                  $dark;
 $body-color:                $white;
@@ -237,7 +244,9 @@ section.login{
 
 
 /*page home*/
-
+.home{
+    padding-top: 125px;
+}
 .section-block{
     padding: 15vh 0;
 }
