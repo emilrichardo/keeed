@@ -18,7 +18,7 @@ $input-border-radius-lg: 30px;
 $input-border-radius-sm:  30px;
 
 // Allows for customizing button radius independently from global border radius
-$btn-padding-y:           15px;
+$btn-padding-y:           16px;
 $btn-padding-x:            50px;
 $input-font-size-lg:  16px;
 $input-padding-x-lg: 25px;
@@ -310,6 +310,12 @@ section.login{
 
 //wallets ui
 
+.wallet-pages{
+    @media (max-width:768px){
+        padding-bottom: 85px;
+    }
+}
+
 .app-nav{
     position: fixed;
     bottom: 0;
@@ -338,6 +344,7 @@ section.login{
     }
     .footer-wallet{
         position: relative;
+        bottom: 85px;
     }
 }
 
