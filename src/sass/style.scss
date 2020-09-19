@@ -446,6 +446,23 @@ section.login{
     }
 }
 
+.chat-list{
+    margin-bottom: 85px;
+}
+
+.chat-received{
+    @include border-radius (0px 15px 15px 15px); 
+}
+.my-chat{
+    @include border-radius (15px 0px 15px 15px);
+}
+
+.chatlfield{
+    bottom: 56px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 
 .item-fc{
     position: relative; 
