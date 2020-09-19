@@ -459,9 +459,14 @@ section.login{
 
 .chatlfield{
     bottom: 56px;
-    max-width: 768px;
+    max-width: 600px;
     margin: 0 auto;
+    .btn-file{
+        width: 50px;
+        min-width: auto;
+    }
 }
+
 
 
 .item-fc{
