@@ -1,10 +1,11 @@
 $dark:#292e38;
 $white: #fff;
-$secondary: #45484d;
+$secondary: #404650;
 $dark-blue:#222530;
+$primary:#FF765A;
 
 $theme-colors: (
-    "primary": #FF765A,
+    "primary": $primary,
     "dark": $dark,
     "white": $white,
     "secondary": $secondary,
@@ -129,6 +130,26 @@ button:focus{
     outline: 0;
     outline: 0px auto transparent;  
 }
+
+
+
+.form-control-dark{
+    .form-control{
+        background-color: lighten($dark, 5%);
+        border-color: lighten($dark, 2%);
+    }
+    .input-group .btn{
+        background-color: lighten($dark, 5%);
+        border-color: lighten($dark, 2%);
+        i{
+            color: $primary;
+        }
+    }
+}
+
+
+
+
 .navbar {    
     text-transform: uppercase;
     
@@ -326,6 +347,8 @@ section.login{
 .wallet-pages{
     
     @media (max-width:768px){
+        padding-top: 42px;
+        padding-bottom: 35px;
         .display-4 {
             font-size: 2rem;
         }
@@ -406,6 +429,19 @@ section.login{
         
         .card{
             background: transparent;
+        }
+    }
+}
+
+
+//chtas
+
+.conversations{
+
+    .list-group-item{
+        background-color: lighten($dark,8%);
+        & + .list-group-item{
+            margin-top: 10px;
         }
     }
 }

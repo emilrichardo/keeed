@@ -17,7 +17,9 @@
     </head>
     
     <body class="wallet-pages">
-        <nav class="app-nav d-block d-md-none">
+        <nav class="app-nav d-block d-md-none shadow-lg
+
+  ">
             <ul class="nav  nav-fill h3">
                 <li class="nav-item  active"> <a class="nav-link " href="#"><i class='bx bx-chat'></i></a>
                 </li>
@@ -32,108 +34,104 @@
         <header class="wallet-header px-4 py-2 d-md-none fixed-top">
              <h6>Subjects de convesación</h6>
         </header>
-        <section class="chat page mt-5">
-            <div class="search-contact">
-                <div class="row">
-                    <div class="col">
-                        <div class="search-contact-form my-3">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control form-control-lg" placeholder="Search contact or enter address"
-                                aria-label="Search" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-white px-4" style="min-width: 80px;" type="button"
-                                    id="button-addon2"><i class='bx bx-search'></i>
-                                    </button>
+        <section class="chat-page pb-5">
+            <div class="container" style="max-width: 600px;">
+                <div class="search-conversation form-control-dark">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <div class="search-contact my-3">
+                                <div class="input-group mb-3 ">
+                                    <input type="text" class="form-control " placeholder="Search" aria-label="Search "
+                                    aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn  px-4" style="min-width: 80px;" type="button" id="button-addon2"><i class="bx bx-search"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-2 text-center"> <a href="#" class="btn  px-0" style="min-width: 25px;"><i class='bx bxs-user-plus bx-sm'></i></a>
+                        </div>
                     </div>
-                    <div class="col-3"></div>
+                </div>
+                <div class="conversations">
+                     <h6>Today</h6> 
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                    </ul>
+                     <h6>Yesterday</h6> 
+                    <ul class="list-group mb-5">
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                        <li class="list-group-item rounded d-flex justify-content-between align-items-center">
+                            <div class="row align-items-center">
+                                <img src="https://via.placeholder.com/300.png/09f/fff" alt="..." class="rounded-circle  col-4">
+                                <div class="text-block">
+                                     <h5>Amachea Jajah</h5> <small>08/31/2020 10:02 pm</small>
+                                </div>
+                            </div> <span class="badge badge-primary badge-pill h5">14</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <footer class="footer-wallet   text-center ">
-            <div class="container d-md-flex justify-content-between">
-                <div class="py-3">Copyright © 2012-2020 Keeed.</div>
-                <div class="links-footer py-3"> <a href="#">About Us</a> • <a href="#">About Sketch</a> • <a href="#">Terms</a> •
-                    <a
-                    href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </footer>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabe2l"
-        aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" ">
-
-      <div class="modal-content ">
-
-        <div class="modal-header ">
-
-          <h5 class="modal-title " id="exampleModalLabel ">Copie to Clipboard</h5>
-
-          <button type="button " class="close " data-dismiss="modal
-            " aria-label="Close ">
-
-            <span aria-hidden="true ">&times;</span>
-
-          </button>
-
-        </div>
-
-        <div class="modal-body ">    
-
-              <div class="input-group mb-3 ">
-
-                <input type="text " class="form-control form-control-lg
-            " value="18zDP236854949Jggfs76tT545638838 "aria-label="Search contact or enter
-            address " aria-describedby="button-addon2 ">
-
-                <div class="input-group-append ">
-
-                  <button class="btn btn-light px-2 " style="min-width:
-            50px; " type="button " id="button-addon2 "><i class='bx bx-copy' ></i></button>
-
-                </div>
-
-              </div>
-
-        </div>
-
-        <div class="modal-footer d-flex justify-content-center ">          
-
-          <button type="button " class="btn btn-primary ">Got it</button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-<script src="js/all.js "></script>
-<script>
-    $(".navbar-nav li a ").click(function() {   
-          $(".navbar-collapse ").toggleClass("show ");
-         
-        });
-</script>
-<script src="js/wow.min.js "></script>
-<script>
-    wow = new WOW(
-        {
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // default
-        offset:       10,          // default
-        mobile:       false,       // default
-        live:         true        // default
-    }
-    )
-    wow.init();
-</script>
-</body>
+        <script src="js/all.js"></script>
+        <script>
+            $(".navbar-nav li a").click(function() {   
+                  $(".navbar-collapse").toggleClass("show");
+                 
+                });
+        </script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+                {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       10,          // default
+                mobile:       false,       // default
+                live:         true        // default
+            }
+            )
+            wow.init();
+        </script>
+    </body>
 
 </html>

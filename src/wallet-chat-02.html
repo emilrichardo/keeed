@@ -1,0 +1,75 @@
+<partial src="header-wallet.html"></partial>
+<header class="wallet-header px-4 py-2 d-md-none fixed-top d-flex justify-content-between">
+  <h6>Ahmad Nazeri</h6>
+  
+  <!-- Button trigger modal -->
+    <button type="button" class="btn p-0" data-toggle="modal" data-target="#chat-menu">
+        <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
+    </button>
+    </header>
+
+<section class="chat-page pb-5">
+    <div class="container" style="max-width: 600px;">
+        <div class="chat-list">
+            <div class="chat-received card  d-inline-block py-3 px-4 mt-2 mr-4">                
+                    <h6>Siri Jakobsson</h6>
+                    <p class="mb-0">La app de mensajeria más rápida del mundo. Es gratis y Segura</p>
+                    <small class="text-right d-block text-muted">12:08pm</small>                
+            </div>
+            <div class="my-chat card  d-inline-block py-3 px-4 mt-2 ml-4 bg-secondary float-right">  
+                    <p class="mb-0">La app de mensajeria más rápida del mundo. Es gratis y Segura</p>
+                    <small class="text-right d-block text-muted">12:08pm</small>                
+            </div>
+            <div class="chat-received card d-inline-block  py-3 px-4 mt-2 mr-4">                
+                <h6>Siri Jakobsson</h6>
+                <p class="mb-0">La app de mensajeria más rápida del mundo. Es gratis y Segura</p>
+                <small class="text-right d-block text-muted">12:08pm</small>                
+            </div>
+            <div class="my-chat card  d-inline-block py-3 px-4 mt-2 ml-4 bg-secondary float-right">   
+                <p class="mb-0">Es gratis y Segura</p>
+                <small class="text-right d-block text-muted">12:08pm</small>                
+             </div>
+             <div class="chat-received card d-inline-block  py-3 px-4 mt-2 mr-4">                
+                <i class='bx bx-dots-horizontal-rounded'></i>               
+            </div>
+        </div>
+        
+
+    </div>
+    
+</section>
+
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="chat-menu" tabindex="-1" aria-labelledby="chat-menuLabel" aria-hidden="true">
+    <div class="modal-dialog mt-5 mx-3">
+      <div class="modal-content">
+        <div class="modal-header pb-0">          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mt-0">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Nuevo grupo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Mensajes guardados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Mensajes destacados</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Ajustes</a>
+                    </li>                  
+                </ul>
+        </div>       
+      </div>
+    </div>
+  </div>
+
+<partial src="footer.html"></partial>
