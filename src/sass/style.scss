@@ -28,7 +28,7 @@ $input-btn-padding-y-lg: 1rem;
 $input-btn-padding-x-lg: 2.2rem;
 
 $input-btn-font-size: 1rem;
-$input-btn-font-size-sm: 1.8rem;
+$input-btn-font-size-sm: 1.2rem;
 
 
 
@@ -188,6 +188,21 @@ background: linear-gradient(to right,  #2c2e34 0%,#ff765a 26%,#ff765a 49%,#ff765
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', endColorstr='#2c2e34',GradientType=1 ); /* IE6-9 */
 
 }
+
+.bg-gradient-white {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c2e34+0,ff765a+26,ff765a+49,ff765a+71,2c2e34+100 */
+background: #2c2e34; /* Old browsers */
+background: -moz-linear-gradient(left,  #2c2e34 0%, #fff 26%, #fff 49%, #fff 71%, #2c2e34 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2c2e34 0%,#fff 26%,#fff 49%,#fff 71%,#2c2e34 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2c2e34 0%,#fff 26%,#fff 49%,#fff 71%,#2c2e34 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2e34', endColorstr='#2c2e34',GradientType=1 ); /* IE6-9 */
+
+}
+
+.relative{
+    position: relative;
+}
+
 
 @media (min-width:768px){
     .main{
